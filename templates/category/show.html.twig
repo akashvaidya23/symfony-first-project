@@ -8,4 +8,9 @@
 <br>
 <span>Description : {{product.Description}}<span>
 
+<br>
+
+<a href={{ path('category_edit', {'id': product.id}) }}>Edit</a> 
+<a href={{ path('category_delete', {'id': product.id}) }}>Delete</a> 
+
 {% endblock %}
